@@ -7,6 +7,7 @@ const button = document.querySelector('button.button');
 
 let ActualPrice;
 
+
 button.addEventListener('click', function() {
     
     console.log(inputKm.value);
@@ -24,5 +25,9 @@ button.addEventListener('click', function() {
         ActualPrice= inputKm.value * 0.233;
         console.log(ActualPrice);
     }
+
+    document.getElementById('prezzo_finale').innerHTML = ActualPrice + "Euro" ;
+
 });
+
 
